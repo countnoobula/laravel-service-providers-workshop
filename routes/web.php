@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::group(['namespace' => '\App\Http\Controllers'], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+});
+
+Route::group([
+    'namespace' => '\App\Modules\UserExporter\Http\Controllers',
+    'prefix' => 'user-exporter',
+], function () {
+    Route::get('/', 'ExportController@show');
+});
+

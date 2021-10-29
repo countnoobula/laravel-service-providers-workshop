@@ -1,11 +1,11 @@
 Let's talk about a few Laravel based things!
 
-- Service Providers
-	- boot [Before]
-	- register [After]
-- IoC/Facades
-- View Composers
-- Routes
+x - Service Providers
+x 	- boot [Before]
+x	- register [After]
+x - IoC/Facades
+x View Composers
+x - Routes
 
 BONUS ROUND
 - Macros
